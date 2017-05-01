@@ -1,0 +1,20 @@
+{
+	"name": "web",
+	"description": "Role for our web server nodes",
+	"json_class": "Chef::Role",
+	"default_attributes": {
+
+	},
+	"override_attributes": {
+
+	},
+	"chef_type": "role",
+	"run_list": [
+		"recipe[apache2]",
+		"recipe[apaqche2::websites]",
+		"role[monitoring]"
+	],
+	"env_run_lists":{
+
+	}
+}

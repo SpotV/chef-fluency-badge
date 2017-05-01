@@ -1,0 +1,19 @@
+{
+	"name": "monitoring",
+	"description": "Recipes that make up the monitoring stack required for all nodes",
+	"json_class": "Chef::Role",
+	"default_attributes": {
+
+	},
+	"override_attributes": {
+
+	},
+	"chef_type": "role",
+	"run_list": [
+		"recipe[nagios]",
+		"recipe[collectd]"
+	],
+	"env_run_lists":{
+
+	}
+}
